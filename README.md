@@ -8,10 +8,6 @@ system. It is organized around two components:
 - FiLM-CFM beam generator: maps the measured RSRP vector to candidate downlink
   beams through a FiLM-conditioned conditional flow matching model.
 
-The repository is meant to show how the system is built and trained. Baseline
-programs used only for paper comparison, such as DFT sweeping, MLP, diffusion,
-and hierarchical beam search, are not included in this clean release.
-
 <p align="center">
   <img src="assets/framework.png" width="92%" alt="Gen-SSBF framework">
 </p>
