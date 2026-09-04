@@ -15,7 +15,7 @@ system. It is organized around two components:
 ## Repository layout
 
 ```text
-assets/                 Paper figures for context.
+assets/                 System and model figures.
 configs/                Default DeepMIMO O1/O1B system settings.
 scripts/train_codebook.py
 scripts/train_cfm.py
@@ -35,7 +35,7 @@ that package, so the same modules can be imported in new experiments.
 
 ## Installation
 
-The archived development environment used:
+The code was tested with:
 
 | Package | Version |
 | --- | --- |
@@ -144,25 +144,6 @@ python scripts/visualize_results.py \
 Generated files under `results/` are ignored by git. Raw DeepMIMO data,
 checkpoints, logs, and local experiment outputs should stay outside version
 control.
-
-## Paper context
-
-The full paper compares Gen-SSBF with several baselines. This clean release
-does not include those baseline programs, but the paper figures are kept here
-to show the behavior of the proposed system under the reported settings.
-
-<p align="center">
-  <img src="assets/performance_codebook_size.png" width="62%" alt="Performance versus codebook size">
-</p>
-
-<p align="center">
-  <img src="assets/performance_pt_o1_28.png" width="48%" alt="O1_28 transmit-power sweep">
-  <img src="assets/performance_pt_o1b_28.png" width="48%" alt="O1B_28 transmit-power sweep">
-</p>
-
-<p align="center">
-  <img src="assets/cfm_vs_diffusion.png" width="70%" alt="CFM sampling efficiency">
-</p>
 
 ## Citation
 
